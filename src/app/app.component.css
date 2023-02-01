@@ -1,0 +1,15 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.no-margin {
+    margin: 0;
+}
+.body{
+    
+    height:inherit;
+    background-image: radial-gradient(#15483F 30%, #113C34,#000 );
+
+}

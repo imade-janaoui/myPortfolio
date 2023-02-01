@@ -1,0 +1,56 @@
+nav{
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo p{
+    color:#ffffff;
+    font-size: 22px;
+    font-family: math;
+    margin: 0px;
+}
+nav ul{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    list-style: none;
+
+}
+ul li{
+    color: #ffffffb0;
+    padding: 10px;
+}
+ul li a{
+    color: inherit;
+    text-decoration: none;
+    padding:inherit;
+    transition: 1s linear;
+}
+ul li:last-child {
+    padding: 0px;
+    
+}
+ul li:last-child a{
+    border: 1px solid #3AC7AD;
+    border-radius: 22px;
+    color:#3AC7AD;
+    position: absolute;
+    right: 50px;
+    padding: 15px 29px;
+    transition: 1s;
+}
+ul li:last-child a:hover{
+    background-color: #3AC7AD;
+    color:#fff;
+    
+}
+ul li:hover:not(:last-child) a{
+    border-bottom:1px solid#fff ;
+    
+}
+
+
+
+
+

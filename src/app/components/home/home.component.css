@@ -1,0 +1,43 @@
+
+.intro>div{
+    text-align: center;
+}
+
+.intro>div p{
+    color: #ffff;
+    font-size: 75px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px 50px;
+}
+.intro>div>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro>div>div>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.intro>div>div>div span{
+    padding: 10px;
+}
+.intro a{
+    background-color:#3AC7AD;
+    border-radius: 22px;
+    padding: 15px 29px;
+    margin: 10px 20px;
+    color:#000;
+    transition: 1s;
+    text-decoration: none;
+
+}
+.imgcontent{
+    display: flex;
+    justify-content:center;
+}
+.imgcontent img{
+    width:500px;
+}

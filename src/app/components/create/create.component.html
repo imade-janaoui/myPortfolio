@@ -1,0 +1,149 @@
+
+<!-- <form (ngSubmit)="submitForm()">
+    <div>
+      <label for="image">Image :</label>
+      <input type="file" id="image" (change)="onFileChange($event)" accept="image/*" >
+    </div>
+    <div>
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" [(ngModel)]="nom" name="nom">
+    </div>
+    <div>
+      <label for="prenom">Prénom :</label>
+      <input type="text" id="prenom" [(ngModel)]="prenom" name="prenom">
+    </div>
+    <div>
+      <label for="numTel">Numéro de téléphone :</label>
+      <input type="text" id="numTel" [(ngModel)]="numTel" name="numTel">
+    </div>
+    <form (ngSubmit)="submitForm()">
+  <div>
+    <label for="poste">Poste occupé :</label>
+    <input type="text" id="poste" [(ngModel)]="poste" name="poste" required>
+  </div>
+  <div>
+    <label for="entreprise">Entreprise :</label>
+    <input type="text" id="entreprise" [(ngModel)]="entreprise" name="entreprise" required>
+  </div>
+  <div>
+    <label for="debut">Date de début :</label>
+    <input type="date" id="debut" [(ngModel)]="debut" name="debut" required>
+  </div>
+  <div>
+    <label for="fin">Date de fin :</label>
+    <input type="date" id="fin" [(ngModel)]="fin" name="fin" required>
+  </div>
+  <div>
+    <label for="description">Description :</label>
+    <textarea id="description" [(ngModel)]="description" name="description"></textarea>
+  </div>
+  <button type="submit">Ajouter</button>
+</form>
+<form (ngSubmit)="submitForm()">
+  <div>
+    <label for="nomProjet">Nom du projet :</label>
+    <input type="text" id="nomProjet" [(ngModel)]="nomProjet" name="nomProjet" required>
+  </div>
+  <div>
+    <label for="descriptionProjet">Description :</label>
+    <textarea id="descriptionProjet" [(ngModel)]="descriptionProjet" name="descriptionProjet"></textarea>
+  </div>
+  <div>
+    <label for="lienGithub">Lien GitHub :</label>
+    <input type="url" id="lienGithub" [(ngModel)]="lienGithub" name="lienGithub" required>
+  </div>
+  <button type="submit">Ajouter</button>
+</form>
+    <button type="submit">Soumettre</button>
+  </form> -->
+
+  <section class="vh-100 gradient-custom">
+  <form class="users_info">
+    <div class="image-upload">
+        <label for="image-upload">
+          <img src="../../../assets/images/default-image.jfif" id="image-preview">
+        </label>
+        <input type="file" id="image-upload"  accept="image/*">
+      </div>
+      <div class="info">
+
+        <div class="form-group">
+        
+          <input type="text" class="form-control" id="input-name" required="required">
+          <label for="input-name">Nom :</label>
+        </div>
+        <div class="form-group">
+          
+          <input type="text" class="form-control" id="input-prenom" required="required">
+          <label for="input-prenom">Prenom :</label>
+        </div>
+        <div class="form-group">
+          
+          <input type="text" class="form-control" id="input-tele" required="required">
+          <label for="input-tele">Telephone :</label>
+        </div>
+      </div>
+    <!-- form pour ajouter l'expérience -->
+    <form class="ajouter_exp" >
+      <div class="titre">
+        <h3>L'expérience</h3>
+        <p></p>
+      </div>
+      
+      <div class="btn_ajout">
+        <button id="btn_add">+</button>
+      </div>
+        <div class="form-group">
+          
+          <input type="text" id="poste" class="form-control" name="poste" required>
+          <label for="poste">Poste occupé :</label>
+        </div>
+        <div class="form-group">
+          
+          <input type="text" id="entreprise" class="form-control" name="entreprise" required>
+          <label for="entreprise">Entreprise :</label>
+        </div>
+        <div class="time">
+          <div class="form-group">
+            <label for="debut">Date de début :</label>
+            <input type="date" id="debut" name="debut" required>
+            
+          </div>
+          <div class="form-group">
+            <label for="fin">Date de fin :</label>
+            <input type="date" id="fin"  name="fin" required>
+           
+          </div>
+        </div>
+       
+        <div class="form-group">
+          <textarea id="description" rows="6"class="form-control"  name="description"></textarea>
+          <label for="description">Description :</label>
+        </div>
+      </form>
+     <!-- form pour ajouter les projet  -->
+      <form class="projet">
+        <div class="titre">
+          <h3>Les projet</h3>
+          <p></p>
+        </div>
+      
+        <div class="form-group">
+          
+          <input type="text" id="nomProjet" class="form-control"   name="nomProjet" required>
+          <label for="nomProjet">Nom du projet :</label>
+        </div>
+        <div class="form-group">
+          <textarea id="descriptionProjet" class="form-control" rows="6" name="descriptionProjet"></textarea>
+          <label for="descriptionProjet">Description :</label>
+
+        </div>
+        <div class="form-group" >
+          
+          <input type="url" id="lienGithub" class="form-control"  name="lienGithub" required>
+          <label for="lienGithub">Lien GitHub :</label>
+        </div>
+      </form>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  </section>

@@ -1,0 +1,201 @@
+.users_info{
+   display: grid;
+   justify-content:center;
+}
+
+
+.image-upload {
+    position: relative;
+    width: 190px;
+    height: 190px;
+    border: 2px dashed #2bd31f;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 40px;
+    
+}
+
+#image-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#image-upload {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+   
+    cursor: pointer;
+}
+
+.users_info .info{
+    width: 100%;
+   
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    
+}
+.titre{
+    width:100%;
+    text-align: center;
+}
+.titre h3{
+    position: relative;
+    left: 40%;
+    top: 51px;
+    font-size: 29px;
+    padding: 10px;
+    border: 1px solid;
+    width: max-content;
+    background-color: #2bd31f;
+    border-radius: 10px;
+}
+.titre p{
+    border-bottom:2px solid #2bd31f;
+}
+.projet .titre{
+    margin-bottom: 43px;
+}
+
+
+
+
+
+.form-group {
+    margin-bottom: 1rem;
+    position: relative;
+    display: flex;
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    background: none;
+    border: none;
+    color: #fff;
+    border: 1px solid #2bd31f;
+   
+}
+
+/* .form-control:focus {
+    border-color: #2bd31f;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    transform: scale(1.05);
+} */
+.form-group label {
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    font-size: 12px;
+    color: #2bd31f;
+    transform: translateY(-50%);
+    text-transform:capitalize ;
+    transition: top 0.3s ;
+    pointer-events: none;
+    
+}
+.form-group .form-control:valid + label,
+.form-group .form-control:focus + label{
+    background-color:#123d35;
+    padding: 0px 5px ;
+    top:0px;
+    /* top:0px; */
+    
+}
+
+/* .form-group input:valid,
+.form-group input:focus{
+    color: #3742fa;
+    border: 2px solid #3742fa;
+} */
+
+
+
+.btn-primary {
+    background-color: #2bd31f;
+    color: #000;
+    border: 1px solid #123d35;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #56e74c;
+    transform: scale(1.05);
+}
+#poste,#entreprise,#description,#lienGithub,#descriptionProjet,#nomProjet{
+    width: 70%;
+}
+
+.time{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.ajouter_exp,.projet{
+    width:inherit;
+    text-align: center;
+
+}
+.ajouter_exp #btn_add{
+    position: relative;
+    top: 32px;
+    left:68%;
+    font-size: 20px;
+    width: 30px;
+    background: none;
+    height: 30px;
+    border-radius: 100%;
+    color: #2bd31f;
+    border: 1px solid #2bd31f;
+    cursor: pointer;
+
+}
+
+
+
+.ajouter_exp input[type="date"] {
+    background: none;
+    color:#2bd31f;
+    font-size:12px;
+    padding: 13px;
+    outline: none;
+    border: 1px solid #2bd31f;
+    border-radius:5px;
+    margin: 10px;
+cursor: pointer;
+  }
+  
+
+  input::-webkit-calendar-picker-indicator{
+    color: #2bd31f;
+    cursor:pointer;
+}
+.ajouter_exp label[for="fin"],.ajouter_exp label[for="debut"]{
+    /* position: relative;
+    top: 18px;
+    left: 15px; */
+    font-size: 12px;
+    color: #2bd31f;
+    transform: translateY(-50%);
+    text-transform:capitalize ;
+    transition: top 0.3s ;
+    pointer-events: none;
+}
+
+
